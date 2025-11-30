@@ -42,16 +42,67 @@ A confidential AI Counseling Agent that listens, provides empathetic support, su
 - Crisis detection and appropriate routing to professional help
 - Code comments and docstrings for clarity
 
-## Setup Instructions
-1. Clone the repository
-2. Install dependencies:
+## 🚀 Installation & Setup Instructions
+
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package installer)
+- Git (for cloning the repository)
+
+### Step-by-Step Installation
+
+1. **Clone the Repository**
+   ```powershell
+   git clone https://github.com/mayurab22/Capstone-Project.git
+   cd Capstone-Project
+   ```
+
+2. **Create Virtual Environment (Recommended)**
+   ```powershell
+   # Create virtual environment
+   python -m venv mental_health_env
+   
+   # Activate virtual environment
+   # On Windows:
+   mental_health_env\Scripts\activate
+   
+   # On macOS/Linux:
+   source mental_health_env/bin/activate
+   ```
+
+3. **Install Dependencies**
    ```powershell
    pip install -r requirements.txt
    ```
-3. Run the Mental Health Assistant:
+
+4. **Run the Mental Health Assistant**
    ```powershell
    python mental_health_assistant/main.py
    ```
+
+### 📓 Alternative: Run Jupyter Notebook
+To see the complete project with diagrams and documentation:
+```powershell
+pip install jupyter matplotlib seaborn
+jupyter notebook MentalHealthAgentSubmission.ipynb
+```
+
+### 🔧 Troubleshooting
+- **Import Errors**: Ensure you're in the project root directory and virtual environment is activated
+- **Python Version**: Make sure you're using Python 3.8+
+- **Permission Issues**: On Windows, run PowerShell as Administrator if needed
+
+### 💡 Quick Test
+After installation, the agent will display a welcome message and menu options:
+```
+Welcome to the Confidential Mental Health Counseling Bot!
+
+Options:
+1. Talk about your feelings
+2. Get coping strategies
+3. Get professional referral
+4. Exit
+```
 
 ## Project Journey
 - **Ideation**: Addressed stigma and lack of support for mental health in India
