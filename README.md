@@ -12,7 +12,28 @@ A confidential AI Counseling Agent that listens, provides empathetic support, su
 - **Coping Strategy Sub-Agent**: Suggests solutions and exercises using AI
 - **Referral Sub-Agent**: Recommends professionals in extreme cases
 
-![Architecture Diagram](mental_health_assistant/architecture.png)
+```
+┌─────────────────────────────────┐
+│    Mental Health Assistant      │
+│         (Main Agent)           │
+└─────────┬───────────────────────┘
+          │
+    ┌─────┴─────┐
+    │           │
+    ▼           ▼
+┌─────────┐ ┌─────────┐ ┌─────────┐
+│Listener │ │ Coping  │ │Referral │
+│ Agent   │ │Strategy │ │ Agent   │
+│         │ │ Agent   │ │         │
+└─────┬───┘ └────┬────┘ └────┬────┘
+      │          │           │
+      ▼          ▼           ▼
+   Empathy   AI-Powered   Professional
+  & Input    Solutions     Referrals
+             (Gemini AI)
+```
+
+*📊 For detailed visual diagrams, see the [MentalHealthAgentSubmission.ipynb](MentalHealthAgentSubmission.ipynb) notebook which contains comprehensive architecture, data flow, and system component diagrams.*
 
 ## Features & Key Concepts
 - Agent-based modular architecture for privacy and scalability
